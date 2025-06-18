@@ -1,0 +1,98 @@
+:root {
+    --bs-scrolly-item-background: #cac9b3;
+  }
+  body:not(.sqs-edit-mode) .fe-block .sqs-block-image .fluid-image-container {
+    background-color: var(--bs-scrolly-item-background) !important;
+  }
+  body:not(.sqs-edit-mode) .fe-block .sqs-block-image .fluid-image-container::before {
+    background-image: url('https://struthless.github.io/qandco/ICON_SAGE_NON_.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    height: 6vw;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: scale(0) translate(-50%,-50%);
+    -ms-transform: scale(0) translate(-50%,-50%);
+    transform: scale(0) translate(-50%,-50%);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transition: all 0.35s cubic-bezier(1,0,0,1);
+    -o-transition: all 0.35s cubic-bezier(1,0,0,1);
+    transition: all 0.35s cubic-bezier(1,0,0,1);
+    width: 6vw;
+    z-index: 100;
+  }
+  body:not(.sqs-edit-mode) .fe-block .sqs-block-image .fluid-image-container:hover::before {
+    -webkit-transform: scale(1) translate(-50%,-50%);
+    -ms-transform: scale(1) translate(-50%,-50%);
+    transform: scale(1) translate(-50%,-50%);
+  }
+  body:not(.sqs-edit-mode) .fe-block .sqs-block-image .sqs-block-alignment-wrapper {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+  }
+  body:not(.sqs-edit-mode) .fe-block .sqs-block-image img {
+    max-width: none;
+    opacity: 0;
+  }
+  body:not(.sqs-edit-mode) .bs-home__logo-holder {
+    position: fixed;
+    height: 30vh;
+    bottom: 0;
+    min-height: 1px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 95.8333333333%;
+    -ms-flex: 0 0 95.8333333333%;
+    flex: 0 0 95.8333333333%;
+    max-width: 95.8333333333%;
+    bottom: 15px;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+  }
+  body:not(.sqs-edit-mode) .bs-home__logo-holder img {
+    height: 100%;
+    width: auto;
+  }
+  
+  body:not(.sqs-edit-mode) .bs--screen-overlay.exit {
+	-webkit-animation: slide-out-top 0.75s ease-out both;
+	        animation: slide-out-top 0.75s ease-out both;
+    }
+    @-webkit-keyframes slide-out-top {
+        0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        }
+        100% {
+        -webkit-transform: translateY(-100vh);
+                transform: translateY(-100vh);
+        }
+    }
+    @keyframes slide-out-top {
+        0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        }
+        100% {
+        -webkit-transform: translateY(-100vh);
+                transform: translateY(-100vh);
+        }
+    }
+    body:not(.sqs-edit-mode)  .bs--screen-overlay {
+    background-color: var(--bs-scrolly-item-background) !important;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
